@@ -55,10 +55,10 @@ function finishUI(ok) {
   const m = document.getElementById("msg");
   if (m)
     m.textContent = ok
-      ? "DONE"
+      ? "تم التعديل بنجاح"
       : armedEver
-        ? "Restart your console"
-        : "Refresh the page and run again";
+        ? "فشلت عملية التعديل — أعد تشغيل الجهاز"
+        : "تعذر تنفيذ عملية التعديل — أعد المحاولة";
   document.body.className = ok ? "done" : "fail";
 }
 function mark(tag, detail) {

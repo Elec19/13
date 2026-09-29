@@ -1,5 +1,8 @@
 CACHE MANIFEST
-# Electronic World visual update
+# Electronic World UI v3
+
+CACHE:
+local_background.png
 # rev 20260925-skipjb2
 
 index.html #4898a1249458a4e1baaff5480a92810db010bdf538cdb8f7a58715805166f65c
@@ -18,9 +21,6 @@ patches/1350.bin #f771c196d012496c01f575674e95a74d7b00b7c1bc22325c7321f3ab6eb77b
 patches/1352.bin #adfb9771904f71cd1f5a82cbded8ac46c7ffeb3df974579535cf711904ac347e
 core.js?v=10 #a76c52afbc19b05d176be2059048a3c6a4fb61db084d56434cef2b17da00b2b3
 jb.js?v=19 #6f64a7add3e664e02a6e73a0e4c8189dd2cbde1261774cbef543b7bc2cdfb4dd
-
-local_background.png
-logo_electronic_world.png
 
 NETWORK:
 *

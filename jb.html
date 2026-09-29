@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>عالم الالكترونيات - Jailbreak</title>
+    <title>عالم الالكترونيات</title>
     <style>
       html,
       body {
@@ -58,14 +58,17 @@
       }
       #msg {
         position: fixed;
-        top: 50%;
+        top: calc(50% + 48px);
         left: 0;
         right: 0;
         transform: translateY(-50%);
         text-align: center;
-        font-size: 16px;
-        letter-spacing: 0.5px;
-        display: none;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        color: #ffffff;
+        display: block;
+        text-shadow: 0 2px 12px #000;
       }
       #wrap {
         padding: 0;
@@ -137,27 +140,30 @@
         color: #9fb3d0;
       }
     
-      html, body {
-        background: #050a10 url("local_background.png") center top / cover fixed no-repeat !important;
-      }
-      body::before {
-        content: "";
-        position: fixed; inset: 0;
-        background: rgba(2,7,12,.62);
-        pointer-events:none;
-        z-index:0;
-      }
-      #brand, #wrap, #spin, #msg { z-index: 2; }
-      #brand { position: relative; background: rgba(4,10,17,.84); backdrop-filter: blur(8px); }
-      #brand img { width:42px; height:42px; border-radius:12px; }
-      #brand b { font-size:22px; letter-spacing:0; }
-      #brand .brand-sub { display:block; font-size:10px; letter-spacing:.24em; color:#7edcff; margin-top:2px; }
+/* Electronic World local background */
+html, body {
+  min-height: 100%;
+  background: #05080d url("local_background.png") center center / cover fixed no-repeat !important;
+  color: #f2f6fa;
+}
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.08);
+  pointer-events: none; z-index: 0;
+}
+#brand { position: relative; z-index: 3; background: rgba(0,0,0,.24); border-bottom: 1px solid rgba(80,180,255,.22); backdrop-filter: blur(2px); }
+#brand .brand-title { font-size:18px; font-weight:800; color:#fff; text-shadow:0 2px 10px #000; }
+#brand .brand-en { display:block; font-size:9px; letter-spacing:.35em; color:#79d8ff; text-shadow:0 1px 6px #000; }
+#spin, #msg, #wrap { z-index: 3; }
+#msg { text-shadow: 0 2px 10px #000; }
+body.log #out { background: rgba(0,0,0,.55); border-color: rgba(80,180,255,.25); }
 </style>
   </head>
   <body>
-    <div id="brand"><img src="logo_electronic_world.png" alt="عالم الالكترونيات"><b>عالم الالكترونيات</b><span class="brand-sub">ELECTRONIC WORLD</span></div>
+    <div id="brand"><span class="brand-title">عالم الالكترونيات</span><span class="brand-en">ELECTRONIC WORLD</span></div>
     <div id="spin"></div>
-    <div id="msg">Restart your console</div>
+    <div id="msg">جاري عملية التعديل...</div>
     <div id="wrap">
       <div id="state"></div>
       <div id="out"></div>
